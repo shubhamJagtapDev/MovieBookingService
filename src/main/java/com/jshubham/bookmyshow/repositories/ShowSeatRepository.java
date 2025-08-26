@@ -10,5 +10,4 @@ public interface ShowSeatRepository extends JpaRepository<ShowSeat, Long> {
     Optional<List<ShowSeat>> findByShowId(Long showId);
     List<ShowSeat> findAllById(List<Long> id);
 
-    ShowSeat findById(Long id);
 }
