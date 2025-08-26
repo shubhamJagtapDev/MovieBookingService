@@ -17,6 +17,7 @@ import java.util.List;
 public class Movie extends BaseModel{
     private String name;
     private Date releaseDate;
+    private String description;
 
     @Enumerated(EnumType.ORDINAL)
     @ElementCollection // this will basically will create a mapping table between movie and list of enum.feature.id's
