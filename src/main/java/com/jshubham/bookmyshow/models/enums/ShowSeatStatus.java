@@ -1,7 +1,7 @@
 package com.jshubham.bookmyshow.models.enums;
 
 public enum ShowSeatStatus {
-    AVAIlABLE,
+    AVAILABLE,
     NOT_AVAILABLE, // for seat under maintenance
     BOOKED,
     BLOCKED

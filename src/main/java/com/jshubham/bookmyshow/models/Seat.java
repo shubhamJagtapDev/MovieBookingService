@@ -4,6 +4,7 @@ import com.jshubham.bookmyshow.models.enums.SeatType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,4 +18,7 @@ public class Seat extends BaseModel{
 
     @Enumerated(EnumType.ORDINAL)
     private SeatType seatType;
+
+    @ManyToOne
+    Screen screen;
 }

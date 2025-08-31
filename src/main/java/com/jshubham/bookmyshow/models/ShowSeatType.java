@@ -16,7 +16,7 @@ public class ShowSeatType extends BaseModel{
     private Show show;
     @Enumerated(EnumType.ORDINAL)
     private SeatType seatType;
-    private int price;
+    private double price;
 }
 /**
  * Show - X, Y, Z
