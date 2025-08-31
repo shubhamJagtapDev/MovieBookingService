@@ -18,6 +18,11 @@ public class Show extends BaseModel{
     private Date startTime;
     private Date endTime;
 
+    @OneToMany(mappedBy = "show")
+    private List<ShowSeat> showSeats;
+    @OneToMany(mappedBy = "show")
+    private List<ShowSeatType> showSeatTypes;
+
     @ManyToOne
     private Screen screen;
 

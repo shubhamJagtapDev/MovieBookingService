@@ -1,6 +1,7 @@
 package com.jshubham.bookmyshow.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
@@ -17,6 +18,6 @@ public class Theatre extends BaseModel{
     @ManyToOne
     private Region region;
 
-    @OneToMany
+    @OneToMany(mappedBy = "theatre")
     List<Screen> screens;
 }
